@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'Loader.dart';
 
 import 'package:flutter/material.dart';
 
@@ -67,11 +68,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    CircularProgressIndicator(
-                      backgroundColor: Colors.black,
-                    ),
+                    Loader(),
+                   
                     Padding(
-                      padding: EdgeInsets.only(top: 20),
+                      padding: EdgeInsets.only(top:2),
                     ),
                     Text(
                       'Pen It Down',
